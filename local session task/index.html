@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local session task</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="registration_form custom_forms">
+        <form action="#">
+            <h1>REGISTRATION</h1>
+            <input type="text" class="form-control-lg" placeholder="Username">
+            <input type="password" class="form-control-lg" placeholder="Password">
+            <input type="password" class="form-control-lg" placeholder="Re-type Password">
+            <input type="button" class="btn btn-success" value="Submit">
+        </form>
+    </div>
+    <div class="login_form custom_forms">
+        <form action="#">
+            <h1>login</h1>
+            <input type="text" class="form-control-lg" placeholder="Username">
+            <input type="password" class="form-control-lg" placeholder="Password">
+            <input type="button" class="btn btn-danger" value="LOGIN">
+        </form>
+    </div>
+    <div class="home_page">
+        <nav class="bg-dark text-white text-center p-2">
+           <button class="btn btn-light text-dark">Logout</button>
+        </nav>
+    </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // submit registration form
+            $('.btn-success').click(function(){
+                var username=$(this).parent().find('input[type="text"]').eq(0).val();
+                var pass=$(this).parent().find('input[type="password"]').eq(0).val();
+                var retype_pass=$(this).parent().find('input[type="password"]').eq(1).val();
+               
+                if(pass==retype_pass){
+                    $(localStorage.setItem('username',username));
+                    $(localStorage.setItem('password',pass));
+                    $(localStorage.setItem('retype_pass',retype_pass));
+                    $('.registration_form').hide();
+                    $('.login_form').show();
+                    $(this).parent().find('input[type="text"]').val('');
+                    $(this).parent().find('input[type="password"]').val('');
+                    $(this).parent().find('input[type="password"]').val('');
+                }
+                else{
+                    alert("Password not matched");
+                }
+            });
+            // submit login form
+            $('.btn-danger').click(function(){
+                var login_username=$(this).parent().find('input[type="text"]').eq(0).val();
+                var login_pass=$(this).parent().find('input[type="password"]').eq(0).val();
+
+                var local_username=localStorage.getItem('username');
+                var local_pass=localStorage.getItem('password');
+
+                if((local_username==login_username)&&(local_pass==login_pass)){
+                    $('.login_form').hide();
+                    $('.home_page').show();
+                    $(this).parent().find('input[type="text"]').val('');
+                    $(this).parent().find('input[type="password"]').val('');
+                }
+                else{
+                    alert("Credientials not match");
+                }
+
+            });
+            // logout button
+            $('.btn-light').click(function(){
+                $(localStorage.removeItem('username'));
+                $(localStorage.removeItem('password'));
+                $(localStorage.removeItem('retype_pass'));
+                $('.home_page').hide();
+                $('.registration_form').show();
+            });
+        });
+    </script>
+</body>
+</html>

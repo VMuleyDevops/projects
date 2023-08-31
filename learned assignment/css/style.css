@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+html{
+    font-size: 100%;
+}
+
+/******************** sections by satyashil *****************/
+.logo{
+    position: absolute;
+    left: 11.25rem;
+    display: flex;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    position: relative;
+    left: 23.75rem;
+    display: inline-block;
+  }
+  
+  .nav-bar li {
+    float: left;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 1.563rem;
+    text-decoration: none;
+    font-size: 1.188rem;
+    font-family: "Source Sans Pro", "Arial", sans-serif;;
+  }
+
+a:hover {
+    text-decoration: underline;
+    color: #43cb83!important;
+  }
+  .apply-text{
+    border-radius: 2.5rem;
+    background-color: whitesmoke;
+    color: #43cb83;
+  }  
+  .fimg{
+    position: absolute;
+    top: 9.25rem;
+    height: 28.125rem;
+    width:34.375rem ;
+    left: 0rem;
+  }
+  .innovation{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .ftext{
+    position: absolute;
+    top: 14.375rem;
+    left: 37.5rem;
+    color: #43cb83;
+    font-size: 2.188rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.ptext{
+    position: absolute;
+    top: 20.625rem;
+    left: 37.5rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.full-circle{
+    width:50rem;
+    height:45rem;
+    margin-top: 2rem;
+    margin-right: -10rem;
+    float: right;
+    overflow-x: hidden;
+}
+.simg{
+    position: absolute;
+    top: 19rem;
+    right: 0px;
+    height: 18rem;
+
+}
+.s-text{
+  background-color: #43cb83;
+  color: aliceblue;
+  position: absolute;
+  left: 37.5rem;
+  font-size: 0.8rem;
+  top: 25.5rem;
+  padding: 1rem;
+  border-radius:3rem;
+}
+.box-one{
+  background-color:#FFB4B4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  bottom: 6rem;
+  left: 18rem;
+}
+.design-text{
+  font-size: 1.5rem;
+  position: relative;
+  top:  10rem;
+  left: 4.8rem;
+}
+.eng{
+  position:absolute;
+ height: 85px;
+ top: 4rem;
+ left: 5rem;
+}
+.box-two{
+  background-color:#DAF5FF;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 45.3rem;
+  left: 36rem;
+} 
+.box-three{
+  background-color:#FFDEB4;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 45.3rem;
+  left: 53.5rem;
+}
+.box-four{
+  background-color: #FFDEB4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  /* top: 43rem; */
+  bottom: 4rem;
+  left: 18rem;
+
+}
+.box-five{
+  position: absolute;
+  background-color:#F0EB8D;
+  height: 15rem;
+  width: 16rem;
+  top: 62rem;
+  left: 36rem;
+}
+.box-six{
+  position: absolute;
+  background-color:#B9E9FC;
+  height: 15rem;
+  width: 16rem;
+  top: 62rem;
+  left: 53.5rem;
+}
+
+/**************sections by sagar******************/
+.container {
+    height: 60rem;
+    display: flex;
+    /* margin-top: 45rem; */
+}
+
+.full-bg-img {
+    width: 50%;
+    position: relative;
+}
+
+.half-circle {
+    width: 40rem;
+}
+
+.house {
+    border-radius: 100%;
+    width: 30rem;
+    border: 25px solid #ebf7fb;
+    padding: 0.8rem;
+    position: absolute;
+    top: 10rem;
+    left: 18rem;
+}
+
+.play-button {
+    width:5rem;
+    position: absolute;
+    top: 22rem;
+    left: 30rem;
+    border-radius: 100%;
+}
+
+.flower {
+    width: 15rem;
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+}
+
+.para {
+    width: 30%;
+    height: 60rem;
+    margin-left: 5rem;
+    margin-top: 15rem;
+    font-family: sans-serif;
+}
+
+.para-heading {
+    color: #42d07f;
+}
+
+.para-text {
+    color: #787b80;
+
+}
+
+.text-2 {
+    word-spacing: 4.5rem;
+
+}
+
+.student {
+    color: #fbbb00;
+    display: inline-block;
+}
+
+.Cources {
+    color: #ff5974;
+    display: inline-block;
+
+}
+
+.Hours {
+    color: #41c382;
+    display: inline-block;
+
+}
+
+.text-font {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*******************sections by raivndra***************/
+.signup-page{
+    display:flex;
+    height:25rem;
+    background-color: #f1e3fb;
+}
+.form-left{
+   padding:4rem 0rem 2rem 2rem ;
+}
+.form-caption{
+    width:70%;
+    padding-top:5rem;
+    margin-left:4rem;
+}
+.form-caption p{
+    padding-top:4rem;
+    letter-spacing: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-caption a{
+    color: rgb(211, 70, 70);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.form-caption h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:300;
+}
+.form-page{
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.30) 5px 10px 20px;;
+    background-image: url(../images/signupback.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: relative;
+    height: 33rem;
+    bottom: 4rem;
+    margin-left: 5rem;
+    z-index:1; 
+    }
+.form-page form{
+    padding:12px 20px;
+    margin:8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-page form h3{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: rgb(143, 138, 132);
+}
+form strong{
+    color: #aea2a2;
+}
+
+.form-page form [type=text], input[type=password]
+, input[type=email]{
+    width: 100%;
+    background: transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(188, 166, 166);
+  }
+  .form-page button{
+    background-color: rgb(115, 217, 115);
+    border-radius:10rem 10rem;
+    padding: 1rem;
+    border: none;
+    margin:1rem;
+    color: #f2f2f2;
+  }
+  .call{
+    text-decoration:none;
+  }
+  form a{
+    color: rgb(136, 161, 142);
+    text-decoration: underline;
+  }
+  input:hover{
+   border-bottom: 2px solid rgb(179, 175, 184);
+  }
+.form-right{
+    width: 30%;
+    padding-top:8rem;
+    position: relative;
+ }  
+ .form-right img{
+    position: absolute;
+    right:70%
+ }
+
+/***************sections by vaishnavi***********************/
+/********** news and review section ***********************/
+.news-review{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-review div{
+    width: 70%;
+    margin: auto;
+}
+.news-review .news{
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.news-review .news p{
+    font-size: 2rem;
+    font-weight:bold;
+    margin-bottom: 1rem;
+    color: #43cb83;
+}
+.news-review .news span{
+    width: 65%;
+    display: inline-block;
+    font-size: 1rem;
+    color: #5a6e79;
+}
+.news-review .news button{
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #43cb83;
+    color: white;
+    font-size: 1rem;
+    float: right;
+}
+hr{
+    width: 100%;
+    background-color: rgb(219, 212, 212);
+    height: 0.1rem;
+    border: none;
+}
+.news-review .review{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-review .review div{
+    padding: 1rem;
+    width: 50%;
+    width: 50%;
+}
+.news-review .review p:first-child{
+    color: #252c3a;
+    font-size: 1.8rem;
+    font-weight:bold;
+}
+.news-review .review div .likes{
+    color: #5a6e79;
+}
+.news-review .review div .like{
+    color:#43cb83;
+}
+.news-review .review div .msg{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #5a6e79;
+}
+.news-review .review div .comments{
+    margin-left: 2rem;
+    color: #5a6e79;
+}
+.news-review .review div .comment{
+    color:#43cb83;
+}
+.news-review .review div .date{
+    margin-left:15rem;
+    color: #5a6e79;
+    font-size: 0.8rem;
+}
+/* *****************footer************************ */
+
+footer .body{
+    width: 100%;
+    height: 20rem ;
+    background-color: #252b39;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+}
+footer .body div{
+    width: 20%;
+    height: 90%;
+    padding: 1rem;
+}
+footer .body div h3{
+    color: white;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+footer .body div p{
+    color: #969595;
+    font-size: 14px;
+    margin: 1rem 0;
+}
+footer .body div hr{
+    height: .5px;
+    background-color: #969595;
+    width: 80%;
+    margin: auto;
+}
+footer .body .about ul{
+    margin-top: 1rem;
+    list-style-type: none;
+}
+footer .body .about ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+footer .body .update span{
+    color: #6b6b6b;
+    font-size: 12px;
+}
+footer .body .support form input[type='text']{
+    width: 12rem;
+    height: 2rem;
+    border: none;
+    padding-left: 1rem;
+}
+footer .body .support form input[type='submit']{
+    height: 2rem;
+    width: 5rem;
+    background-color:#43cb83;
+    color: white;
+    border: none;
+    margin-left: -2rem;
+    text-align: center;
+}
+
+footer .end{
+    width: 100%;
+    height: 3rem;
+    background-color: #1d222d;
+    color: #969595;
+    padding:1rem 10rem;
+}
+footer .end ul{
+    list-style-type: none;
+    float: right;
+}
+footer .end ul li{
+    display: inline;
+    margin-right: 1rem;
+}

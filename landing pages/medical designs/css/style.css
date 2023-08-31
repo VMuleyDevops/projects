@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 100%; 
+}
+/* **************************************************FIRST SECTION******************************************************** */
+.first{
+width: 100vw;
+height: auto;
+background-image: url(../images/bg11.jpg);
+background-size: 100% 100%;
+padding-bottom: 6rem;
+/* color: white; */
+}
+.first .contact{
+    background-color: black;
+    width: 100%;
+    height: 2rem;
+    color: white;
+}
+.first nav{
+    background-color: whitesmoke;
+    width:100%;
+    height: 3.5rem;
+    color: black;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+.first nav h2{
+    width:40%;
+}
+.first nav h2::first-letter{
+    color: rgb(29, 186, 226);
+}
+.first nav ul{
+    list-style-type: none;
+    width: 60%;
+}
+.first nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+    font-weight: 700;
+
+}
+.first .para{
+    height:auto;
+    width: 35%;
+    margin-top: 10rem;
+    margin-left: 13rem;
+    /* border: 1px solid red; */
+
+}
+ .first .para button{
+    height: 2rem;
+    width: 10rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+ } 
+
+ /* **************************************************SECOND SECTION***************************************** */
+ .second{
+    width: 100%;
+    height: auto;
+    /* background-color: white; */
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+ }
+ .second .para{
+    width: 35%;
+    height:20rem;
+    /* border: 1px solid red; */
+    color: black;
+    margin-top: 4rem;
+    /* margin-left: 10rem; */
+ }
+ .second .para button{
+    background-color: rgb(29, 186, 226);
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    border: none;
+    margin-top: 3rem;
+ }
+ .second img{
+    /* border: 1px solid green; */
+    /* margin-top: 8rem; */
+    margin-left: 2rem;
+    height: 25rem;
+    width: 20rem;
+ }
+ /*********************************************THIRD******************************************* */
+ .third{
+    width: 100vw;
+    height:auto;
+    padding: 0rem 0rem 4rem 0rem;
+ }
+ .third .thirdsone{
+    display: flex;
+ }
+.one{
+    background: linear-gradient(to top, #b9b2d9ba, #b9a2c5cc), url(../images/bg1.jpg);
+    background-size: 100% 100%;
+    width: 50vw;
+    height: 20rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+.two{
+    width: 50vw;
+    height: 20rem;
+    background-color: #1dbae2;
+ }
+ .third .thirdssecond{
+    display: flex;
+ }
+.three{
+    background-color: rgb(29, 186, 226);
+    width: 50vw;
+    height: 20rem;
+    background-color: rgb(29, 186, 226);
+ }
+.four{
+    background-image: url(../images/image1.jpg);
+    background-size: 100% 100%;
+    width: 50vw;
+    height: 20rem;
+ }
+ /* ***************************************FOURTH******************************** */
+ .fourth{
+    width: 100vw;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+
+ }
+ .fourth .info{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .fourth .info div{
+    width: 33%;
+    height: 50%;
+   padding: 1.5rem;
+    text-align: center;
+ }
+ /* ************************************FIFTH************************************** */
+ .fifth{
+    width: 100vw;
+    height: 40rem;
+    display: flex;
+    background-color: rgb(235, 234, 234);
+    justify-content: space-evenly;
+ }
+ .fifth .info2{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .fifth .info2 div{
+    width: 33%;
+    height: 50%;
+    padding: 1.5rem;
+    text-align: center;
+ }
+ /* ********************************SIXTH**************************************************** */
+ .sixth{
+    width: 100vw;
+    height: 20rem;
+    background-color: rgb(29, 186, 226);  
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+ }
+ .sixth .para{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: white;
+ }
+ /* ****************************************SEVEN*********************************************** */
+ .seventh{
+    width: 100vw;
+    height: auto;
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.seventh form {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.seventh form input{
+    height: 2.5rem;
+    padding: .5rem;
+    width: 24rem;
+    margin-bottom: 1rem;
+}
+.seventh form button{
+    height: 2.4rem;
+    width: 10rem;
+    background-color: white;
+    border-color: rgb(29, 186, 226);
+    color: rgb(29, 186, 226);
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.seventh .map{
+    width: 40%;
+    height: 100%;
+}
+ /* *************************************************EIGHT************************************************ */
+ .eight{
+    width: 100%;
+    height: 20rem;
+    background-color:#13005A;
+    display: flex;
+    justify-content: center;
+    color: white;
+ }
+ .eight div{
+    width: 23%;
+    height: 100%;   
+    text-align: justify;
+    padding-top: 6rem;
+}
+.eight div h3{
+    margin-bottom: 1.5rem;
+}

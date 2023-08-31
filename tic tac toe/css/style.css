@@ -1,0 +1,36 @@
+.info{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.result{
+    font-size: 5rem;
+}
+form{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40rem;
+    height: 18rem;
+}
+.main{
+    height: 45rem;
+}
+.boxes{
+    width: 31rem;
+    height: 31rem;
+    margin: auto;
+    
+}
+.box{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+.player1{
+    background-color: red;
+}
+.player2{
+    background-color: blue;
+}

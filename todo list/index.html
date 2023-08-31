@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <button class="add_notebook">Add New Notebook</button>
+        <p class="mb-5">To Do List</p>
+    </div>
+    <!-- main section -->
+    <div class="main"></div>
+    <!-- footer -->
+    <div class="footer">
+        <p>All &copy; right reserved to Vaishnavi Muley.</p>
+    </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // click in add new notebook
+            $(document).on('click','.add_notebook',function(){
+                var new_notebook_name=prompt('Enter new notebook name');
+                if(new_notebook_name!=null){
+                    $('.main').append('\
+                    <div class="notebook">\
+                        <div class="notebook_heading">\
+                            <p>'+new_notebook_name+'</p>\
+                            <div>\
+                                <i class="fa-solid fa-trash-can delete_notebook" style="color: white;"></i>\
+                                <i class="fa-solid fa-plus add_notebook" style="color: white;"></i>\
+                            </div>\
+                        </div>\
+                        <div class="notebook_body">\
+                            <div class="list">\
+                                <input type="checkbox">\
+                                <div class="task">\
+                                    <textarea  cols="5" rows="45" class="hide" placeholder="Enter Task"></textarea>\
+                                    <label>Add New Task</label>\
+                                </div>\
+                                <div class="icon">\
+                                    <i class="fa-solid fa-pencil " style="color: black;"></i>\
+                                    <i class="fa-solid fa-check fa-2x hide" style="color: black;"></i>\
+                                    <i class="fa-solid fa-trash-can" style="color: black;"></i>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div class="add_task">\
+                            <i class="fa-solid fa-plus fa-2x"></i>\
+                        </div>\
+                    </div>');
+                }
+            });
+            // click on delete_notebook icon
+            $(document).on('click','.delete_notebook',function(){
+                $(this).parents().closest('.notebook').remove();
+            });
+            // click on pencil icon
+            $(document).on('click','.fa-pencil',function(){
+                $(this).parent().prev().find('textarea').removeClass('hide');
+                $(this).parent().prev().prev().addClass('hide');
+                $(this).parent().prev().find('label').addClass('hide');
+                $(this).parent().find('.fa-check').removeClass('hide');
+                $(this).parent().find(".fa-trash-can").addClass('hide');
+                $(this).addClass('hide');
+                var edit_Val=$(this).parent().prev().find('textarea').val();
+                if(edit_Val.length!=0){
+                    var label_val= $(this).parent().prev().find('label').text();
+                    $(this).parent().prev().find('textarea').text(label_val);
+                };
+            });
+
+            // click on check icon
+            $(document).on('click','.fa-check',function(){
+                $(this).parent().prev().find('textarea').addClass('hide');
+                $(this).parent().prev().prev().removeClass('hide');
+                $(this).parent().prev().find('label').removeClass('hide');
+                $(this).addClass('hide');
+                $(this).parent().find(".fa-trash-can").removeClass('hide');
+                $(this).parent().find('.fa-pencil').removeClass('hide');
+                var edit_Val=$(this).parent().prev().find('textarea').val();
+                if(edit_Val.length!=0){
+                    $(this).parent().prev().find('label').text(edit_Val);
+                };
+            });
+
+            // click on bin icon of particular list item
+            $(document).on('click','.fa-trash-can',function(){
+                $(this).parents().closest('.list').remove();
+                console.log($(this).parents().find('.list'));
+            });
+
+            // click on add_task icon
+            $(document).on('click','.add_task',function(){
+                $(this).parent().find('.notebook_body').append(
+                "<div class='list'>\
+                    <input type='checkbox'>\
+                    <div class='task'>\
+                        <textarea  cols='5' rows='45' class='hide' placeholder='Enter Task'></textarea>\
+                        <label>Add New Task</label>\
+                    </div>\
+                    <div class='icon'>\
+                        <i class='fa-solid fa-pencil' style='color: black;'></i>\
+                        <i class='fa-solid fa-check fa-2x hide' style='color: black;'></i>\
+                        <i class='fa-solid fa-trash-can' style='color: black;'></i>\
+                    </div>\
+                </div>");
+            });
+
+            // checkbox check
+            $(document).on('click','input[type=checkbox]',function(){
+             console.log("hello");
+             if($('input[type=checkbox]').is(':checked')){
+                $(this).next().find('label').addClass('line_through');
+                $(this).parent().find('.fa-pencil').addClass('hide');
+             }
+             else{
+                $(this).next().find('label').removeClass('line_through');
+                $(this).parent().find('.fa-pencil').removeClass('hide');
+             }
+            });
+        });
+
+        $(window).on("beforeunload",function(){
+             return confirm();
+        });
+    </script>
+</body>
+</html>

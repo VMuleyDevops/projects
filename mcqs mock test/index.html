@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- result pop up window-->
+    <div class="container-fluid result d-none">
+        <div class="row">
+            <div class="col-6 box p-4 text-light">
+                <div class="border p-3">
+                    <h4 class="mb-4 class text-center">FINAL RESULT</h4>
+                    <div class="h-75">
+                        <p>Total questions not attempt:<span class="not_attempt">20</span></p>
+                        <p>Total questions attempt: <span class="attempt">0</span></p>
+                        <p>Total right answer: <span class="correct_ans">0</span></p>
+                        <p >Total wrong answer: <span  class="wrong">20</span></p>
+                    </div>
+                    <div class="text-center h-25">
+                        <input type="button" class="btn me-1 w-50 rounded-0 text-light" value="KNOW ANSWER">
+                        <input type="button" class="btn me-1 rounded-0 text-light" value="RETRY">
+                        <input type="button" class="btn rounded-0 text-light" name="close-btn" value="CLOSE">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- question paper -->
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class=" col-12 header text-center fs-2   ">
+                ONLINE MOCK-TEST
+            </div>
+            <div class="col-12 main-section">
+                <div class="row h-100 d-flex align-item-center">
+                    <div class="col"></div>
+                    <div class="col-6 shadow-lg questions pt-3 mt-5">
+                        <ol>
+                            <li class="d-block">
+                                <div>Q 1 Elections to panchayats in state are regulated by</div>
+                                <ul>
+                                    <li><input type="radio" name="first">Gram panchayat</li>
+                                    <li><input type="radio" name="first">Nagar Nigam</li>
+                                    <li><input type="radio" name="first">JElection Commission of India</li>
+                                    <li><input type="radio" name="first" class="right_answer">;;;;State Election Commission</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 2 Which of the given amendments made it compulsory for the president to consent to the constitutional Amendment bills?</div>
+                                <ul>
+                                    <li><input type="radio" name="second">27<sup>th</sup></li>
+                                    <li><input type="radio" name="second">29<sup>th</sup></li>
+                                    <li><input type="radio" name="second" class="right_answer">;;;24<sup>th</sup></li>
+                                    <li><input type="radio" name="second">22<sup>th</sup></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 3 Which of the following Himalayan regions is called "Shivalik's"?</div>
+                                <ul>
+                                    <li><input type="radio" name="third">Upper Himalayas</li>
+                                    <li><input type="radio" name="third">Lower Himalayas</li>
+                                    <li><input type="radio" name="third" class="right_answer">;;;;Outer Himalayas</li>
+                                    <li><input type="radio" name="third">Inner Himalayas</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 4 Forming of Association in India is</div>
+                                <ul>
+                                    <li><input type="radio" name="fourth">Legal Right</li>
+                                    <li><input type="radio" name="fourth">Illegal Right</li>
+                                    <li><input type="radio" name="fourth">Natural Right</li>
+                                    <li><input type="radio" name="fourth" class="right_answer">;;;Fundamental Right.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 5 Which of the given is a disease caused by protozoa?</div>
+                                <ul>
+                                    <li><input type="radio" name="fifth">Cancer</li>
+                                    <li><input type="radio" name="fifth">Typhoid</li>
+                                    <li><input type="radio" name="fifth" class="right_answer">;;;Kala-azar</li>
+                                    <li><input type="radio" name="fifth">Chicken Pox</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 6 Which of the given coins was known as 'Karshapana' in ancient literature?</div>
+                                <ul>
+                                    <li><input type="radio" name="sixth">Gold coins</li>
+                                    <li><input type="radio" name="sixth">Bronze coins</li>
+                                    <li><input type="radio" name="sixth" class="right_answer">;;Punch marked coins</li>
+                                    <li><input type="radio" name="sixth">Iron coins</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 7 Digestion of food in human beings begins in which part of the alimentary canal?</div>
+                                <ul>
+                                    <li><input type="radio" name="seventh">Liver</li>
+                                    <li><input type="radio" name="seventh">Kidney</li>
+                                    <li><input type="radio" name="seventh" class="right_answer">;;Mouth</li>
+                                    <li><input type="radio" name="seventh">Large intestine</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 8 When the metal reacts with dilute acid, which gas is formed?</div>
+                                <ul>
+                                    <li><input type="radio" name="eight">Carbon Dioxide</li>
+                                    <li><input type="radio" name="eight">Helium</li>
+                                    <li><input type="radio" name="eight">Neon</li>
+                                    <li><input type="radio" name="eight" class="right_answer">;;Hydrogen</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 9 Which of the given vitamin is a water-soluble vitamin?</div>
+                                <ul>
+                                    <li><input type="radio" name="nine">Vitamin A</li>
+                                    <li><input type="radio" name="nine" class="right_answer">;;Vitamin B</li>
+                                    <li><input type="radio" name="nine">Vitamin K</li>
+                                    <li><input type="radio" name="nine">Vitamin D</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 10 Which of the following is responsible for nitrogen fixation?</div>
+                                <ul>
+                                    <li><input type="radio" name="ten">Fungus</li>
+                                    <li><input type="radio" name="ten" class="right_answer">;;Bacteria</li>
+                                    <li><input type="radio" name="ten">Virus</li>
+                                    <li><input type="radio" name="ten">Insects</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 11  Press Council of India is a</div>
+                                <ul>
+                                    <li><input type="radio" name="elevan">Profitable organization</li>
+                                    <li><input type="radio" name="elevan">The constitutional quasi-judicial body</li>
+                                    <li><input type="radio" name="elevan" class="right_answer">;;The statutory quasi-judicial body</li>
+                                    <li><input type="radio" name="elevan">None of these</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 12 Population dividend means</div>
+                                <ul>
+                                    <li><input type="radio" name="twelve">The total population of the world</li>
+                                    <li><input type="radio" name="twelve">Migration of people from the poorer region to richer region</li>
+                                    <li><input type="radio" name="twelve">Total no of the population above 60</li>
+                                    <li><input type="radio" name="twelve" class="right_answer">;;The youthful age structure of a population.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 13 Who among the following decides if an individual Bill is a Money Bill or not?</div>
+                                <ul>
+                                    <li><input type="radio" name="thirteen">Prime Minister</li>
+                                    <li><input type="radio" name="thirteen">President</li>
+                                    <li><input type="radio" name="thirteen">Member of Lok Sabha</li>
+                                    <li><input type="radio" name="thirteen" class="right_answer">;;Speaker of Lok Sabha</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 14  "Rashtriya Swasthya Bima Yojana" Launched under Social Security Act 2008 Involves</div>
+                                <ul>
+                                    <li><input type="radio" name="fourteen">Only rural workers</li>
+                                    <li><input type="radio" name="fourteen">Only social workers</li>
+                                    <li><input type="radio" name="fourteen" class="right_answer">;;Only Unorganized sector workers</li>
+                                    <li><input type="radio" name="fourteen">All of the above</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 15 Which of the given vitamins is responsible for blood clotting?</div>
+                                <ul>
+                                    <li><input type="radio" name="fifteen">Vitamin A</li>
+                                    <li><input type="radio" name="fifteen">Vitamin B</li>
+                                    <li><input type="radio" name="fifteen" class="right_answer">;;Vitamin K</li>
+                                    <li><input type="radio" name="fifteen">Vitamin D</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 16 Who among the given had translated the Upanishads from Sanskrit to Persian</div>
+                                <ul>
+                                    <li><input type="radio" name="sixteen" class="right_answer">;;Dara Shukoh</li>
+                                    <li><input type="radio" name="sixteen">Babar</li>
+                                    <li><input type="radio" name="sixteen">Mirza Galib</li>
+                                    <li><input type="radio" name="sixteen">Abul Fazal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 17 Musi is a tributary of which of the given rivers?</div>
+                                <ul>
+                                    <li><input type="radio" name="seventeen">Ganga</li>
+                                    <li><input type="radio" name="seventeen" class="right_answer">;;Krishna</li>
+                                    <li><input type="radio" name="seventeen">Kaveri</li>
+                                    <li><input type="radio" name="seventeen">Chambal</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 18  Which of the given Mughal emperors had introduced the Mansabdari system?</div>
+                                <ul>
+                                    <li><input type="radio" name="eighteen">Shahjahan</li>
+                                    <li><input type="radio" name="eighteen" class="right_answer">;;Babar</li>
+                                    <li><input type="radio" name="eighteen">Akbar</li>
+                                    <li><input type="radio" name="eighteen">Aurangzeb</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 19 Which of the given industries uses limestone as a raw material?</div>
+                                <ul>
+                                    <li><input type="radio" name="nineteen">Paper</li>
+                                    <li><input type="radio" name="nineteen" class="right_answer">;;Cement</li>
+                                    <li><input type="radio" name="nineteen">Textile</li>
+                                    <li><input type="radio" name="nineteen">Leather</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Q 20 Which of the following is a scalar quantity?</div>
+                                <ul>
+                                    <li><input type="radio" name="twenty">Force</li>
+                                    <li><input type="radio" name="twenty" class="right_answer">;;Pressure</li>
+                                    <li><input type="radio" name="twenty">Momentum</li>
+                                    <li><input type="radio" name="twenty">Acceleration</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <input type="button" value="PREV" class="btn prev d-none">
+                        <input type="button" value="NEXT" class="btn next">
+                        <input type="button" value="SUBMIT" class="btn bg-danger d-none">
+                    </div>
+                    <div class="col"></div>
+                    <div class="col-3 shadow-lg sequence mt-5 pt-3">
+                        <ul class="p-0">
+                            <li class="badge active">1</li>
+                            <li class="badge">2</li>
+                            <li class="badge">3</li>
+                            <li class="badge">4</li>
+                            <li class="badge">5</li>
+                            <li class="badge">6</li>
+                            <li class="badge">7</li>
+                            <li class="badge">8</li>
+                            <li class="badge">9</li>
+                            <li class="badge">10</li>
+                            <li class="badge">11</li>
+                            <li class="badge">12</li>
+                            <li class="badge">13</li>
+                            <li class="badge">14</li>
+                            <li class="badge">15</li>
+                            <li class="badge">16</li>
+                            <li class="badge">17</li>
+                            <li class="badge">18</li>
+                            <li class="badge">19</li>
+                            <li class="badge">20</li>
+                        </ul>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="footer text-center">
+                Vaishnavi Muley All Rights Reserved Front End Web Developer (Question Ref: javapoint.com)
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // ****prev btn*****
+            $('.prev').click(function(){
+                const selector = $(this).parent().find('.d-block');
+                if($(selector).prev().is('li')){
+                    // to hide and show the questions
+                    $(selector).prev().addClass('d-block');
+                    $(selector).prev().removeClass('d-none');
+                    $(selector).next().removeClass('d-block');
+                    $(selector).addClass('d-none');
+                    $(selector).removeClass('d-block');
+                    // to hide previous btn
+                    if((selector).index()==1){
+                        $(this).addClass('d-none');
+                    }
+                    // to hide submit btn after click on prev
+                    $('.questions').find('.bg-danger').addClass('d-none');
+                    $('.questions').find('.next').removeClass('d-none');
+
+                    // affect on sequence badge
+                    var a=$(selector).index();
+                    $('.badge').eq(a-1).addClass('active');
+                    $('.badge').eq(a-1).prevAll().removeClass('active');
+                    $('.badge').eq(a-1).nextAll().removeClass('active');
+                }
+            });
+            // ******next btn*****
+            $('.next').click(function(){
+                const selector = $(this).parent().find('.d-block');
+                if($(selector).next().is('li')){
+                    // to hide and show the questions
+                    $(selector).next().addClass('d-block');
+                    $(selector).next().removeClass('d-none');
+                    $(selector).addClass('d-none');
+                    $(selector).removeClass('d-block');
+
+                    // show the previous button on first click
+                    $(this).prev().removeClass('d-none');
+
+                    // affect on sequence badge
+                    var a=$(selector).index();
+                    $('.badge').eq(a+1).addClass('active');
+                    $('.badge').eq(a+1).prevAll().removeClass('active');
+                    $('.badge').eq(a+1).nextAll().removeClass('active');
+                }
+                else{
+                    // for submit btn
+                    $(this).addClass('d-none');
+                    $(this).next().removeClass('d-none');
+                }
+            });
+           
+            // ****badge ******
+            $('.badge').click(function(){
+                var a = $(this).index();
+                // on click badge change the question
+                $('.questions ol > li').eq(a).prevAll().addClass('d-none');
+                $('.questions ol > li').eq(a).nextAll().removeClass('d-none');
+                $('.questions ol > li').eq(a).prevAll().removeClass('d-block');
+                $('.questions ol > li').eq(a).nextAll().removeClass('d-block');
+                $('.questions ol > li').eq(a).addClass('d-block');
+                $('.questions ol > li').eq(a).removeClass('d-none');
+
+                // change the state of badge
+                $(this).addClass('active');
+                $(this).prevAll().removeClass('active');
+                $(this).nextAll().removeClass('active');
+
+                // according to badge click change the previous btn state
+                if(a!=0){
+                    $('.questions').find('.prev').removeClass('d-none');
+                }
+                else{
+                    $('.questions').find('.prev').addClass('d-none');
+                }
+
+                // if we click on 20 badge change the property of submit btn
+                if(a==19){
+                    $('.questions').find('.next').addClass('d-none');
+                    $('.questions').find('.bg-danger').removeClass('d-none');
+                }
+                else{
+                    $('.questions').find('.bg-danger').addClass('d-none');
+                    $('.questions').find('.next').removeClass('d-none');
+                }
+            });
+
+             // ****** show result after click on submit btn*****
+             $('.bg-danger').click(function(){
+                // diplay result box popup
+                $('.result').removeClass('d-none');
+                $('.box').fadeIn();
+
+                // putting value in result box
+                var attempt=$(':radio:checked').length; // find total number of clicked input 
+                $('.box').find('.attempt').text(attempt);
+
+                var not_attempt= 20-attempt; //total question = 20
+                $('.box').find('.not_attempt').text(not_attempt);
+
+                var correct=$("input:radio.right_answer:checked").length; //already correct input has class 'right_answer'
+                $('.box').find('.correct_ans').text(correct);
+
+                var wrong=attempt-correct;
+                $('.box').find('.wrong').text(wrong);
+            });
+
+            // ****close the pop up box********
+            $('input[name="close-btn"]').click(function(){
+                $('.box').fadeOut();
+                $('.result').addClass('d-none');
+            });
+        });
+    </script>
+</body>
+</html>

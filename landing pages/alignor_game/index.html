@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="images/mountain2.png">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap" rel="stylesheet">
+        <!-- title -->
+        <title>Alignor Game</title>
+    </head>
+<body>
+    <div class="exit">
+        <p>increasing your leverage when buyers has leverage</p>
+        <div class="close"> <p>EXIT</p><span>&#10006;</span></div>
+    </div>
+    <div class="bars">
+        <aside>
+            <div class="man">
+                <img src="images/man.png" alt="man">
+                <div class="tooltip">
+                    <p>Okay, I'll be your coach for this game</p>
+                </div>
+                <div class="tooltip2">
+                    <p>Wow, you're really exploring in the game! Very cool! Think about what it would take to jum into the top proficiency
+                        level! You would need to select first the choices that deliver the 100 score AND after that try all the other choices!
+                         Based on what I'm seeing, I think you can do it!"
+                    </p>
+                </div>
+            </div>
+            <div class="restart-game">
+                <button class="game-button">Restart Game</button>
+                <button class="preferences-button">Your Coaching Preferences</button>
+                <div class="horizontal-line"></div>
+                <p>Please Rate The Game</p>
+                <div class="rating">
+                    <input type="checkbox" id="first"><label for="first"><i class="fa-solid fa-star fa-2x" style="color:white"></i></label>
+                    <input type="checkbox" id="second"><label for="second"><i class="fa-solid fa-star fa-2x" style="color:white"></i></label>
+                    <input type="checkbox" id="third"><label for="third"><i class="fa-solid fa-star fa-2x" style="color:white"></i></label>
+                    <input type="checkbox" id="fourth"><label for="fourth"><i class="fa-solid fa-star fa-2x" style="color:white"></i></label>
+                    <input type="checkbox" id="fifth"><label for="fifth"><i class="fa-solid fa-star fa-2x" style="color:white"></i></label>
+                </div>
+                <textarea name="message"  cols="30" rows="3" placeholder="Your feedback"></textarea>   
+            </div>
+        </aside>
+        <section>
+            <header>
+                <div class="score">
+                    <p>TOTAL SCORE</p>
+                    <h3>120</h3>
+                    <p>(180 maximum)</p>
+                </div>
+                <div class="proficiency">
+                    <div>
+                       <p>YOUR PROFICIENCY</p> 
+                       <h4>LEVEL 6</h4>
+                       <h3>Mastered</h3>
+                       <p>(6-level scale)</p>
+                    </div>
+                    <img src="images/mountain.png" alt="mountain" height="150">
+                </div>
+            </header>
+            <div class="section-body">
+                <!-- first page section -->
+                <div class="button-section">
+                    <button class="get-button">Get Coaching</button>
+                    <button class="later-button">Maybe Later</button>
+                </div>
+                <!-- second page section -->
+                <div class="experiance">
+                    <h2>SELECT YOUR PERSONALISE COACHING EXPERIENCE</h2>
+                    <P>We will personalize your coaching experience based on your learning objective and preference.
+                        The information you enter here about you objectives and preference will only be available to you and will not be
+                        shared. You can change you selection at any time
+                    </P>
+                    <h2>SELECT ONE OF THE FOLLOWING OPTIONS:</h2>
+                    <form action="#">
+                        <input type="radio" name="select" id="own"><label for="own">I am doing this learning on my own</label>
+                        <input type="radio" name="select" id="team"><label for="team">I am doing this learning as a part of a team</label>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+                <!-- fourth page section -->
+                <div class="info">
+                    <div class="more-coaching">
+                        More Coaching
+                    </div>
+                    <!-- mountain -->
+                    <div class="mountain">
+                        <p>95<sup>th</sup> <br>Percentile</p>
+                        <img src="images/mountain2.png" alt="mountain2" width="450">
+                        <img src="images/man2.png" alt="man2" class="man-level2">
+                        <div>
+                            <div class="levels level1">Only 5% have reached the peak</div>
+                            <div class="levels level2 active">Only 5% explorer beyond</div>
+                            <div class="levels level3">46% got to this spot</div>
+                            <div class="levels level4">35% made it this far</div>
+                            <div class="levels level5">5% stoped short</div>
+                            <div class="levels level6">4% gave up</div>
+                        </div>
+                    </div>
+                    <!-- video -->
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/6mbwJ2xhgzM" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- last image -->
+                    <div class="last">
+                        <img src="images/manback.png" alt="manback">
+                        <div>
+                            How to might this play out in your real-life interaction? What would you do next?
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+          <p>&copy; Copyright 2020 Alignor, LLC. All right reserved</p>          
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ***navbar**** */
+.navbar{
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 2rem;
+    background-color: #DB005B;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.navbar p{
+    margin-right: 45%;
+}
+button{
+    height: 2.2rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    color: #DB005B;
+    padding: 0 0.5rem;
+    margin-right: auto;
+}
+/* ****main section**** */
+.main{
+    width: 95%;
+    min-height: 39rem;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+}
+.notebook{
+    width: 20rem;
+    min-height: 20rem;
+    max-height: 20rem;
+    margin: 0 2.5rem 1rem 0;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.175);
+    position: relative;
+    overflow-y: hidden;
+}
+.notebook_heading{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #DB005B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+}
+.delete_notebook{
+    margin-right: 1rem;
+}
+.notebook_body{
+    padding: 0.5rem;
+    padding-bottom: 4rem;
+}
+.notebook_body .list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.notebook_body .list .task{
+    width: 13rem;
+}
+.notebook_body .list .task textarea{
+    width: 115%;
+    max-height:3rem;
+    border: none;
+    font-size: 1.3rem;
+    resize: none;
+}
+.notebook_body .list .task label{
+    width: 100%;
+    font-size: 1.3rem;
+    color: black;
+}
+.hide{
+    display: none;
+}
+.notebook_body .list .task textarea:focus{
+    outline: none;
+}
+.notebook_body .list .icon{
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line_through{
+    text-decoration: line-through;
+}
+.add_task{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #DB005B;
+    color: white;
+    position: absolute;
+    bottom: 3%; 
+    right: 3%;
+}
+/* ***footer*** */
+.footer{
+    width: 100%;
+    height: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB005B;
+    color: white;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Vaishnavi",
+      "subject": "javascript"
+    },
+    {
+      "id": 2,
+      "name": "Shubhangi",
+      "subject": "java"
+    },
+    {
+      "id": 3,
+      "name": "Pratiksha",
+      "subject": "php"
+    },
+    {
+      "id": 4,
+      "name": "Shivani",
+      "subject": "python"
+    }
+  ]
+}

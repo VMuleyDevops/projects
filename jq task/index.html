@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- *****************navbar****************** -->
+    <div class="container-fluid ps-2 bg-dark ">
+        <div class="d-flex justify-content-between pt-3">
+            <ul class="d-none d-md-flex p-0">
+                <li class="list-unstyled ms-3"><a class="text-decoration-none text-light" href="#">HOME</a></li>
+                <li class="list-unstyled ms-3"><a class="text-decoration-none text-light" href="#">ABOUT</a></li>
+                <li class="list-unstyled ms-3"><a class="text-decoration-none text-light" href="#">CONTACT</a></li>
+                <li class="list-unstyled ms-3"><a class="text-decoration-none text-light" href="#">SIGNIN</a></li>
+                <li class="list-unstyled ms-3"><a class="text-decoration-none text-light" href="#">LOGIN</a></li>
+            </ul>
+            <div>
+                <i class="fa-solid fa-bars fa-2x d-md-none mb-2 ms-2" style="color: white;"></i>
+                <ul class="d-md-none flex-column p-0 hamburger">
+                    <li class="list-unstyled mt-3"><a class="text-decoration-none text-light" href="#">HOME</a></li>
+                    <li class="list-unstyled mt-3"><a class="text-decoration-none text-light" href="#">ABOUT</a>
+                    </li>
+                    <li class="list-unstyled mt-3"><a class="text-decoration-none text-light" href="#">CONTACT</a>
+                    </li>
+                    <li class="list-unstyled mt-3"><a class="text-decoration-none text-light" href="#">SIGNIN</a>
+                    </li>
+                    <li class="list-unstyled mt-3"><a class="text-decoration-none text-light" href="#">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- *****accordian ********-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 text-center accordian-btn">
+                <button class="btn btn-success">Show Accordian</button>
+                <button class="btn btn-danger">Close Accordian</button>
+            </div>
+        </div>
+        <div class="row  justify-content-center mt-3 faq">
+            <div class="col-7 offset-3 text-center text-uppercase">
+                <h5>Accordian</h5>
+            </div>
+            <div class="col-7 offset-3">
+                <div class="card border-color-primary mt-2 shadow-lg">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border-none">
+                                <h4 class="ps-3"><i class="fa-solid fa-caret-right me-3"></i>Lorem Lorem Lorem?<i
+                                        class="fa-solid arrow fa-angle-down"></i></h4>
+                                <ul class="description list-unstyled ps-4">
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="ps-3 "><i class="fa-solid fa-caret-right me-3"></i>Lorem Lorem Lorem?<i
+                                        class="fa-solid arrow fa-angle-down"></i></h4>
+                                <ul class="description list-unstyled ps-4">
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="ps-3 "><i class="fa-solid fa-caret-right me-3"></i>Lorem Lorem Lorem?<i
+                                        class="fa-solid arrow fa-angle-down"></i></h4>
+                                <ul class="description list-unstyled ps-4">
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="ps-3 "><i class="fa-solid fa-caret-right me-3"></i>Lorem Lorem Lorem?<i
+                                        class="fa-solid arrow fa-angle-down"></i></h4>
+                                <ul class="description list-unstyled ps-4">
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                    <li>lorem lorem lorem lorem</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- **********pop up model******************* -->
+    <div class="container mt-5 login-form ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <div class="btn btn-danger">POP-UP Model</div>
+            </div>
+            <div class="col-12">
+                <div class="card h-100 w-100 me-0 top-0 start-0">
+                    <div class="card-body h-50 w-50 pt-5">
+                        <div class="d-flex justify-content-between px-3">
+                            <h3 class="text-light">Login</h3>
+                            <i class="fa-solid fa-2x fa-xmark text-light"></i>
+                        </div>
+                        <hr>
+                        <div>
+                            <form action="#" class="px-5 text-center">
+                                <input type="text" placeholder="Username" class="form-control">
+                                <input type="password" placeholder="Password" class="form-control mt-3">
+                                <input type="button" class="btn w-25 btn-primary mt-4" value="Login">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *******************slider*************** -->
+    <div class="slide_wraper container mt-5">
+        <ul>
+            <li class='active'><img src="images/academic-tools.jpg" alt="images"></li>
+            <li><img src="images/college-building2.jpg" alt="images"></li>
+            <li><img src="images/student-study.jpg" alt="images"></li>
+            <li><img src="images/college-building.jpg" alt="images"></li>
+            <li><img src="images/students-with-certificate.jpg" alt="images"></li>
+        </ul>
+        <div class="btn btn-primary prev">
+            prev
+        </div>
+        <div class="btn btn-primary next">
+            next
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // *********** navbar********* 
+            $('.fa-bars').click(function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).parent().find('.hamburger').slideUp()
+                }
+                else {
+                    $(this).addClass('active');
+                    $(this).parent().find('.hamburger').slideDown()
+                }
+            });
+
+            // *********show and hide button**********
+
+            $('.accordian-btn').find(".btn-danger").click(function () {
+                $(".faq").hide();
+                $(this).hide();
+                $(".btn-success").show();
+            });
+
+            $(".btn-success").click(function () {
+                $(".faq").show();
+                $(this).hide();
+                $(".btn-danger").show();
+            });
+
+            // **************accordian*****************
+
+            $('.list-group h4').click(function () {
+                if ($(this).parent().hasClass('active')) {
+                    $(this).parent().removeClass('active');
+                    $(this).parent().find('.description').slideUp();
+                    $(this).css('background-color', 'white');
+                    $(this).find('.arrow').attr('class', 'fa-solid fa-angle-down arrow');
+                }
+                else {
+                    $(this).parent().addClass('active');
+                    $(this).parent().find('.description').slideDown();
+                    $(this).css('background-color', '#AEE2FF');
+                    $(this).attr('class', 'rounded-2 ps-3 py-1');
+                    $(this).parent().find('.description').css('border-left', '3px solid #AEE2FF');
+                    $(this).find('.arrow').attr('class', 'fa-solid fa-angle-up arrow');
+
+                }
+            });
+
+            // ********pop up model**********
+            $('.login-form').find('.btn-danger').click(function () {
+                $('.login-form').find('.card').removeClass('d-none');
+                $('.login-form').find('.card').addClass('d-block');
+                $('.login-form').find('.card-body').addClass('active');
+
+                $(this).addClass('d-none');
+            })
+            $('.login-form').find('.fa-xmark').click(function () {
+                $('.login-form').find('.card').addClass('d-none');
+                $('.login-form').find('.btn-danger').removeClass('d-none');
+            })
+
+            // ************slider*********************** 
+
+            $('.next').click(function () {
+                const selector = $(this).parent().find('.active');
+                if ($(selector).next().is('li')) {
+                    $(selector).addClass('left_side');
+                    $(selector).next().addClass('active');
+                    $(selector).removeClass('active');
+                }
+                else {
+                    $(selector).parent().children().first().addClass('active');
+                    $(selector).prevAll().removeClass('left_side');
+                    $(selector).removeClass('active');
+                }
+            });
+
+            $('.prev').click(function () {
+                const selector = $(this).parent().find('.active');
+                if($(selector).prev().is('li')){
+                    $(selector).removeClass('active');
+                    $(selector).prev().removeClass('left_side').addClass('active');
+                }
+                else {
+                    $(selector).parent().children().eq(4).addClass('active');
+                    $(selector).removeClass('active');
+                }
+            });
+        }); 
+    </script>
+</body>
+
+</html>

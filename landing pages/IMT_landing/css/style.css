@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+html{
+    font-size: 100%;
+}
+        /* ***********************Header section******************** */
+.header{
+    width :100vw;
+    height:4rem;
+    padding: .5rem;
+}
+.header .logo{
+    float: left;
+    font-size: 2rem;
+    display: flex;
+}
+.vertical-line{
+    border-left: .1rem solid black;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+.header .contact{
+    float: right;
+    font-weight:bolder;
+    margin: .5rem;
+    margin-right: 3rem;
+    text-align: right;
+}
+.header .contact a{
+    text-decoration: none;
+    color: black;
+}
+        /* **********************brochure section********************* */
+.brochure{
+    width :100vw;
+    height:35rem;
+    background-color: rgb(57, 129, 237);
+    display: flex;
+    position: relative;
+}
+.brochure div{
+    height: 100%;
+    width: 50%;
+    padding-top: 4rem;
+    padding-left: 8rem;
+}
+.brochure a{
+    width:16rem;
+    height: 4rem;
+    color: rgb(36, 36, 64);
+    font-weight: bold;
+    border-radius: .5rem;
+    background: linear-gradient(to bottom,white, #9a8bd1cc);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brochure form{
+    position: absolute;
+    width: 60%;
+    height: 50% ;
+    background-color: #19A7CE;;
+    top: 65%;
+    left: 20%;
+
+}
+.brochure form{
+    text-align: center;
+    padding: 1rem;
+}
+.brochure form input[type='text'],input[type='email']{
+    width: 17rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border: none;
+    margin: .3rem;
+}
+.brochure form button{
+    border: none;
+    width: 14rem;
+    height: 2.5rem;
+    background-color: rgb(23, 23, 28);
+    color: white;
+}
+
+
+        /* ***************About Program section********************** */
+.about-program{
+    width :100vw;
+    height:20rem;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.about-program div{
+    margin-top: 8rem;
+    width: 70%;
+    height: 50%;
+}
+            /* ******************Program Benefit section************* */
+.benefit{
+    width :100vw;
+    height:25rem;
+    background-color: #19A7CE;
+    padding-top: 1.5rem;
+}
+.benefit .heading{
+    width: 30rem;
+    height: 3rem;
+    background-color: white;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.benefit .program{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.benefit .program div{
+    width:25%;
+    padding: 1.5rem;
+    height: 100%;
+    border-right: 1px solid rgba(79, 78, 78, 0.829);
+    text-align: center;
+}
+        /* ******************Eligibility section******************** */
+.eligibility{
+    width :100vw;
+    height:20rem;
+    background-image: url(images/background.jpg);
+    display: flex;
+}
+.eligibility .who-attend{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    padding: 2rem;
+    line-height: 2.5rem;
+}
+.eligibility .fees{
+    width: 20%;
+    height: 80%;
+    margin: 2rem;
+}
+.eligibility .fees div{
+    width: 100%;
+    height: 45%;
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(117, 195, 222);
+    color:rgb(2, 96, 128);
+}
+
+        /* ******************Feature section******************** */
+.feature{
+    width :100vw;
+    height:25rem;
+    background-color: white;   
+    display: flex;
+    padding: 2rem 10rem;
+}
+.feature div{
+    width: 60%;
+    height: 100%;
+    line-height: 1.5rem;
+}
+.feature img{
+    width: 40%;
+    height:100%;
+}
+        /* *************************faculty section**************** */
+.faculty{
+    width :100vw;
+    height:35rem;
+    background-color:rgb(56, 56, 143);
+    padding: 2rem ;
+    text-align: center;
+    color: white;
+}
+.faculty .faculty-info{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.faculty .faculty-info div{
+    width: 23%;
+    height: 100%;
+    padding-top: .5rem;
+    background-color: white;
+}
+.faculty .faculty-info div img{
+    width: 10rem;
+    height: 10rem;
+}
+        /* ********************footer section**************************** */
+.footer{
+    width :100vw;
+    height:4rem;
+    background-color: rgb(6, 6, 91);
+    display: flex;
+    justify-content: center;
+}
+.footer p{
+    height: 80%;
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}

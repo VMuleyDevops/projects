@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    font-family:'Roboto', sans-serif;
+}
+.exit{
+    width: 100%;
+    height: 3rem;
+    background-color:rgb(49, 47, 47) ;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exit p{
+    color: white;
+    display: inline-block;
+}
+.exit .close{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: right;
+}
+.close span{
+    margin-left: 1rem;
+}
+.bars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bars aside{
+    width: 20%;
+    height: 45rem;
+    background-color:#cbcbcb;
+}
+.bars aside .man{
+    width: 100%;
+    height: 50%;
+}
+.bars aside .man img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background: #edebdf;
+    color: black;
+    padding: 10px 5px;
+    font-size: 11px;
+    height: 8rem;
+    width: 13rem;
+    z-index: 99;
+    font-size: 1rem;
+    display: none;
+  }
+  .tooltip::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 80px solid #edebdf;
+    position: absolute;
+    right: 95%;
+    top: 60px;
+    transform: translatex(50%) rotate(-120deg);
+  }
+  .bars aside .man:hover .tooltip{
+    display: block;
+  }
+  .tooltip2 p{
+    background-color: #edebdf;
+    position: relative;
+    padding: 1rem;
+  }
+  .tooltip2 {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    background: #edebdf;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 11px;
+    height: 15rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    color: black;
+    z-index: 1;
+    display: none;
+  }
+  .tooltip2::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #edebdf;
+    position: absolute;
+    right: 100%;
+    top: -18px;
+    transform: translatex(50%) rotate(30deg);
+  }
+  .bars aside .man:hover .tooltip2{
+    display: block;
+  }
+ 
+.bars aside .restart-game{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bars aside .restart-game button{
+    display: block;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    font-weight: bolder;
+    height: 3rem;
+    width: 85%;
+    margin: 1.5rem 0 0 ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.bars aside .restart-game .game-button{
+    background-color: #3ab44a;
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.3);
+}
+.bars aside .restart-game .preferences-button{
+    background-color: #ff7800;
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.3);
+}
+.bars aside .restart-game .horizontal-line{
+    background-color: white;
+    height: 1.5px;
+    width: 18rem;
+    margin: 1rem 0;
+}
+.bars aside .restart-game .rating{
+    margin-top: 1rem;
+}
+.bars aside .restart-game .rating input{
+    display: none;
+}
+.rating aside .restart-game .rating label{
+    margin-left: 3rem;
+}
+.rating input:checked + label > .fa-solid{
+    color: yellow !important;
+}
+.bars aside .restart-game textarea{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    resize: none;
+}
+.bars section{
+    width: 80%;
+}
+.bars section header{
+    width: 100%;
+    height: 10rem;
+    background-color:#f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    border-bottom: 2px solid #d3cdcd;
+}
+.bars section header .score p:first-child{
+    color: rgb(57, 56, 56);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+.bars section header .score p:last-child{
+    color: rgb(178, 177, 177);
+    font-weight: bold;
+}
+.bars section header .score h3{
+    color: blue;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.bars section header .proficiency{
+    display: flex;
+    align-items: center;
+}
+.bars section header .proficiency p:first-child{
+    font-weight: bold;
+    color: rgb(57, 56, 56);
+    margin-bottom: 1rem;
+}
+.bars section header .proficiency h3, h4{
+    color: green;
+}
+.bars section header .proficiency h3{
+    font-size: 2rem;
+}
+.bars section header .proficiency p:last-child{
+    font-weight: bold;
+    color: rgb(178, 177, 177);
+}
+.section-body{
+    height: 35rem;
+    overflow-y: scroll;
+}
+/* button section */
+.section-body .button-section{
+    margin-top: 15%;
+}
+.section-body .button-section button{
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bolder;
+}
+.section-body .button-section .get-button{
+    width: 30rem;
+    height: 4rem;
+    background-color: #ff7800;
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    margin-left:30% ;
+    display: block;
+}
+.section-body .button-section .later-button{
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(164, 162, 162);
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    margin-top: 4rem;
+    margin-left:40% ;
+}
+/* experiance section */
+.section-body .experiance{
+    width: 70%;
+    margin-top: 10rem;
+    text-align: left;
+    padding: 4rem;
+}
+.section-body .experiance :nth-child(1){
+    color: gray;
+    margin-bottom: 1rem;
+}
+.section-body .experiance p{
+    color: gray;
+    font-size: 1rem;
+}
+.section-body .experiance :nth-child(3){
+    margin: 2rem 0 2rem 0;
+}
+.section-body .experiance input{
+    display: none;
+}
+.section-body .experiance label {
+    display: block;
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 30px;
+    font-weight: 600;
+  }
+  .section-body .experiance label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid orange;
+  }
+  .section-body .experiance label::before {
+    content: "";
+    position: absolute;
+    left:4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: orange;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .section-body .experiance input:checked + label::before {
+    transform: scale(1);
+  }
+.section-body .experiance button{
+    width: 10rem;
+    height: 3rem;
+    display: block;
+    margin-top: 8rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: orange;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3) ;
+    color: white;
+    border:none;
+}
+/* video section */
+.section-body .info{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/* more coaching */
+.section-body .info .more-coaching{
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 30%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    left: 89%;
+}
+/* mountain */
+.section-body .info .mountain{
+    margin-bottom:10rem ;
+    display: flex;
+    align-items: center;
+    height: 25rem;
+}
+.section-body .info .mountain p:nth-child(1){
+    color: #3ab44a;
+    font-size: 2rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+    font-weight: bold;
+}
+.section-body .info .mountain img:nth-child(2){
+    position: relative;
+    margin-left: 8rem;
+    height: 100%;
+}
+.section-body .info .mountain img:nth-child(3){
+    position: absolute;
+    width: 5rem;
+    width: 5rem;
+    transform: rotate(-20deg);
+}
+.section-body .info .mountain .man-level1{
+    top: 7rem;
+    left: 35rem;
+}
+.section-body .info .mountain .man-level2{
+    top: 10rem;
+    left: 32rem;
+}
+.section-body .info .mountain .man-level3{
+    top: 17rem;
+    left: 29rem;
+}
+.section-body .info .mountain .man-level4{
+    top: 23rem;
+    left: 26rem;
+}
+.section-body .info .mountain .man-level5{
+    top: 27rem;
+    left: 23rem;
+}
+.section-body .info .mountain .man-level6{
+    top: 29rem;
+    left: 20rem;
+}
+.section-body .info .mountain img:nth-child(2){
+    position: relative;
+    z-index: 1;
+}
+.section-body .info .mountain div:nth-child(4){
+    height: 30rem;
+    position: absolute;
+    left: 54%;
+}
+.section-body .info .mountain div:nth-child(4) .levels{
+    border-top: 2px dotted gray;
+    text-align: right;
+    width: 23rem;
+    position: absolute;
+    font-size: 1.2rem;
+}
+.section-body .info .mountain div:nth-child(4) .active{
+    font-weight: bold;
+}
+.section-body .info .mountain div:nth-child(4) .level1{
+    top: 12%;
+    left: 0;
+}
+.section-body .info .mountain div:nth-child(4) .level2{
+    top: 18%;
+    left: 0;
+}
+.section-body .info .mountain div:nth-child(4) .level3{
+    top: 30%;
+    left: 0;
+}
+.section-body .info .mountain div:nth-child(4) .level4{
+    top: 55%;
+    left: 0;
+}
+.section-body .info .mountain div:nth-child(4) .level5{
+    top: 80%;
+    left: 0;
+}
+.section-body .info .mountain div:nth-child(4) .level6{
+    top: 87%;
+    left: 0;
+}
+/* video */
+.section-body .info iframe{
+    margin: 0;
+    margin-left: 10rem;
+}
+/* last images */
+.section-body .info .last{
+    width: 100%;
+    height: 35rem;
+    background-color: #dfdcb3;
+    margin-top: 5rem;
+}
+.section-body .info .last img{
+    width: 100%;
+    height: 50%;
+}
+.section-body .info .last div{
+    width: 70%;
+    height: 20%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin: 5rem 0 0 10rem;
+    padding: 1rem;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+

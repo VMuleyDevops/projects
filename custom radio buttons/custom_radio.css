@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* custom radio button  */
+h2{
+  text-align: center;
+}
+.custom_radio{
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: rgb(235, 232, 232);
+}
+.custom_radio input {
+  display: none; 
+}
+.custom_radio label {
+  height: 10rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  margin:.5rem ;
+  color: rgb(151, 151, 151);
+  background-color: white;
+  padding-top: 1rem;
+  text-align: center;
+}
+.custom_radio label::before {
+  content: "\2713";
+  position: absolute;
+  color: green;
+  left: 77%;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  text-align: center;
+  padding: 0;
+}
+.custom_radio input:checked + label::before {
+  background-color: blueviolet;
+  transform: scale(1);
+}
+.custom_radio input:checked + label {
+  border: 3px solid blueviolet;
+  border-radius: .5rem;
+  box-shadow:1px 1px 5px  blueviolet;
+}
+.custom_radio input:checked + label {
+ color: blueviolet;
+}
+.custom_radio input:checked + label >.fa-brands {
+  color: blueviolet !important;
+ }
+/* custom checkbox button */
+  .custom_checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: black;
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+  }
+  .custom_checkbox input {
+    display: none; 
+  }
+  .custom_checkbox label {
+    height: 10rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    margin:.5rem ;
+    padding: 1rem;
+    text-align: center;
+    background-color:rgb(81, 80, 80);
+    color: white;
+  }
+  .custom_checkbox label i{
+    margin-bottom: 2rem;
+  }
+  .custom_checkbox input:checked + label {
+    background:linear-gradient(to bottom right,rgb(232, 44, 76), rgb(218, 157, 44));
+    color :white;
+    font-weight: 700;
+  }
+
+  

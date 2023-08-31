@@ -1,0 +1,82 @@
+.header, .footer{
+    background-color:#047465;
+}
+.main-section{
+    height: 37.5rem;
+}
+.main-section{
+    background-color:#065147;
+}
+.questions, .sequence{
+    height: 23rem;
+}
+.questions ol{
+    position:relative ;
+}
+.questions ol >li{
+    position:absolute ;
+    display: none;
+}
+.questions ol li div{
+    margin-bottom: 1rem;
+}
+.questions ul li{
+    margin-bottom: 0.8rem;
+}
+.questions li{
+    list-style: none;
+}
+.questions{
+    position: relative;
+}
+.questions .btn{
+    position: absolute;
+    bottom:2%;
+    background-color:#047465;
+    color: white;
+}
+.prev{
+    left: 2%;
+}
+.next ,.bg-danger{
+    right: 2%;
+}
+
+/* sequence badges */
+.sequence .badge{
+    width: 3rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 1rem 0.5rem;
+    background-color:#0d6055;
+}
+.sequence .active{
+    background-color: gray;
+}
+
+/* ****result pop**** */
+.result{
+    height: 42rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.box{
+    width: 28rem;
+    height: 28rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#033a33;
+    display: none;
+}
+.box div{
+    height: 25rem;
+}
+.box .btn{
+    background-color:#047465;
+}

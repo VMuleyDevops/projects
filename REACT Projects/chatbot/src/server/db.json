@@ -1,0 +1,526 @@
+{
+    "bank": 
+    [
+        {   
+            "id":1,
+            "Account Information": [
+                        {
+                            "id":1,
+                            "Tell me about my account balance.": [
+                                {
+                                    "id":1,
+                                    "Online Banking": [
+                                        {
+                                            "id":1,
+                                            "Log in to your online banking account to view your account balance on the dashboard.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "Mobile App": [
+                                        {
+                                            "id":1,
+                                            "Open our mobile banking app and navigate to the account summary section to see your balance.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "ATM": [
+                                        {
+                                            "id":1,
+                                            "Use an ATM affiliated with our bank and follow the prompts to check your account balance.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":4,
+                                    "Branch visit": [
+                                        {
+                                            "id":1,
+                                            "Visit a local branch and request assistance from a customer service representative.": []
+
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":2,
+                            "Can I see recent transactions?": [
+                                {
+                                    "id":1,
+                                    "Online Banking": [
+                                        {
+                                            "id":1,
+                                            "Log in to your online banking account and navigate to the transactions or account history section.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "Mobile App": [
+                                        {
+                                            "id":1,
+                                            "Open our mobile banking app and access the transaction history or activity log.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "ATM": [
+                                        {
+                                            "id":1,
+                                            "Use an ATM affiliated with our bank and choose the option to view recent transactions.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "Bank statement": [
+                                        {
+                                            "id":1,
+                                            "You'll also receive regular bank statements detailing your recent transactions.": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":3,
+                            "How do I check my account statement?": [
+                                {
+                                    "id":1,
+                                    "Online Banking": [
+                                        {
+                                            "id":1,
+                                            "1) Log in to your online banking account and navigate to the statements or documents section. 2) Choose the statement you want to view and download it in PDF format.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "Mobile App": [
+                                        {
+                                            "id":1,
+                                            "Open our mobile banking app and access the statements or documents section to view and download your account statement.": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "Emailes statement": [
+                                        {
+                                            "id":1,
+                                            "Some banks send account statements via email. Make sure to check your inbox for these statements.": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+        },
+        {
+            "id":2,
+            "Payments and Transfers": [
+                {
+                    "id":1,
+                    "How can I transfer money between accounts": [
+                        {
+                            "id":1,
+                            "Within your accounts?":[
+                                {
+                                    "id":1,
+                                    "Savings to checking?":[]
+                                },
+                                {
+                                    "id":2,
+                                    "Checking to savings?":[]
+                                }
+                            ]
+                        },
+                        {
+                            "id":2,
+                            "To another person?":[
+                                {
+                                    "id":1,
+                                    "Do you have their account number and bank details?":[
+                                        {
+                                            "id":1,
+                                            "Yes":[
+                                                {
+                                                    "id":1,
+                                                    "Please provide the recipient's account number.":[]
+                                                },
+                                                {
+                                                    "id":2,
+                                                    "Is this a one-time transfer or a recurring one?":[
+                                                        {
+                                                            "id":1,
+                                                            "How often would you like the transfer to occur?":[
+                                                                {
+                                                                    "id":1,
+                                                                    "Daily":[]
+                                                                },
+                                                                {
+                                                                    "id":2,
+                                                                    "Weekly":[]
+                                                                },
+                                                                {
+                                                                    "id":3,
+                                                                    "Monthly":[]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id":2,
+                                            "No":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "How do I make a bill payment?": [
+                        {
+                            "id":1,
+                            "Is this a one-time payment or a recurring bill?":[
+                                {
+                                    "id":1,
+                                    "One-time payment":[
+                                        {
+                                            "id":1,
+                                            "What's the payment amount?":[]
+                                        },
+                                        {
+                                            "id":2,
+                                            "Do you want to schedule the payment for a specific date?":[
+                                                {
+                                                    "id":1,
+                                                    "Yes":[]
+                                                },
+                                                {
+                                                    "id":2,
+                                                    "No":[]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "Recurring payment":[
+                                        {
+                                            "id":1,
+                                            "How often would you like the payment to be made?":[
+                                                {
+                                                    "id":1,
+                                                    "Weekly":[]
+                                                },
+                                                {
+                                                    "id":2,
+                                                    "Monthly":[]
+                                                },
+                                                {
+                                                    "id":3,
+                                                    "Anually":[]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id":2,
+                                            "When would you like the first payment to be scheduled?":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "Can I set up a recurring transfer?": []
+                }
+            ]
+        },
+        {
+            "id":3,
+            "Online and Mobile Banking":[
+                {
+                    "id":1,
+                    "How do I set up online banking?":[
+                        {
+                            "id":1,
+                            "Do you have an account with us?":[
+                                {
+                                    "id":1,
+                                    "Yes":[
+                                        {
+                                            "id":1,
+                                            "Great! To set up online banking, you'll need your account number and some personal information handy. Do you have those ready?":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "No":[
+                                        {
+                                            "id":1,
+                                            "No problem! Before setting up online banking, you'll need to open an account with us. Would you like assistance with that?":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":2,
+                            "Once you have your account details ready":[
+                                {
+                                    "id":1,
+                                    "Visit our official website.":[
+                                        {
+                                            "id":1,
+                                            "Do you know the web address or would you like me to provide it?":[]
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    "id":2,
+                                    "Look for the 'Sign Up' or 'Register' button.":[
+                                        {
+                                            "id":1,
+                                            "Have you found it?":[]
+                                        } 
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "Follow the prompts to verify your identity.":[
+                                        {
+                                            "id":1,
+                                            "Make sure you have your account number, social security number, and any other required documents.":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "What are the features of the mobile banking app?":[
+                        {
+                            "id":1,
+                            "Have you already downloaded our mobile banking app?":[
+                                {
+                                    "id":1,
+                                    "Yes":[
+                                        {
+                                            "id":1,
+                                            "Fantastic! Our app offers a range of features for convenient banking on the go. Which specific features are you interested in learning more about?":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "No":[
+                                        {
+                                            "id":1,
+                                            "No worries! Our mobile banking app provides various tools to manage your accounts from your smartphone. Would you like guidance on how to download and install it?":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":1,
+                            "Some key features of our mobile banking app include:":[
+                                {
+                                    "id":1,
+                                    "Account overview and transaction history.":[]
+                                },
+                                {
+                                    "id":2,
+                                    "Fund transfers between your accounts and to other accounts.":[]
+                                },
+                                {
+                                    "id":3,
+                                    "Bill payment and management.":[]
+                                },
+                                {
+                                    "id":4,
+                                    "Mobile check deposit.":[]
+                                },
+                                {
+                                    "id":5,
+                                    "Secure messaging with customer support.":[]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "How secure is online banking?":[]
+                }
+            ]
+        },
+        {
+            "id":4,
+            "Fraud and Security": [
+                {
+                   "id":1,
+                   "What should I do if I suspect fraud on my account?":[
+                    {
+                        "id":1,
+                        "Contact us immediately":[
+                            {
+                                "id":1,
+                                "Call our dedicated fraud hotline or customer support number to report the suspicious activity. Do you have these contact numbers readily available?":[]
+                            }
+                        ]
+                    },
+                    {
+                        "id":2,
+                        "Freeze or block your account":[
+                            {
+                                "id":1,
+                                "If necessary, we can help you temporarily freeze your account to prevent further unauthorized transactions.":[]
+                            }
+                        ]
+                    },
+                    {
+                        "id":3,
+                        "Change your passwords and PINs:":[
+                            {
+                                "id":1,
+                                "It's essential to update your online banking passwords, PINs, and any security questions to prevent unauthorized access.":[]
+                            }
+                        ]
+                    }
+                   ]
+                },
+                {
+                    "id":2,
+                    "How can I update my PIN?":[
+                        {
+                            "id":1,
+                            "Visit an ATM":[
+                                {
+                                    "id":1,
+                                    "Locate an ATM affiliated with our bank and follow the on-screen instructions to change your PIN. Remember to keep your new PIN secure.":[]
+                                }
+                            ]
+                        },
+                        {
+                            "id":2,
+                            "Visit a local branch":[
+                                {
+                                    "id":1,
+                                    "You can also update your PIN by visiting a nearby branch. Our customer service representatives will assist you with the process.":[]
+                                }
+                            ]
+                        },
+                        {
+                            "id":3,
+                            "Online or mobile banking":[
+                                {
+                                    "id":1,
+                                    "Some banks allow you to change your PIN through online or mobile banking. Check our website or app to see if this option is available.":[]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "Are my online transactions secure?":[
+                        {
+                            "id":1,
+                            "Yes, we take online security seriously and implement multiple measures to ensure the  safety of your online transactions":[
+                                {
+                                    "id":1,
+                                    "Secure Encryption":[
+                                        {
+                                            "id":1,
+                                            "Our online banking platform uses industry-standard encryption (SSL) to protect the confidentiality of your data during transmission.":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":2,
+                                    "Multi-Factor Authentication (MFA):":[
+                                        {
+                                            "id":1,
+                                            "We use MFA to verify your identity through multiple steps, such as providing a password and a one-time code sent to your registered device.":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":3,
+                                    "Regular Monitoring":[
+                                        {
+                                            "id":1,
+                                            "Our security team monitors accounts for suspicious activity and takes prompt action if any anomalies are detected.":[]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id":4,
+                                    "Secure Login":[
+                                        {
+                                            "id":1,
+                                            "You can enhance your account security by setting up strong, unique passwords and enabling features like biometric login.":[]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id":2,
+                            "To further ensure your security:":[
+                                {
+                                    "id":1,
+                                    "Keep your login credentials confidential.":[]
+                                },
+                                {
+                                    "id":2,
+                                    "Avoid accessing online banking on public Wi-Fi networks.":[]
+                                },
+                                {
+                                    "id":3,
+                                    "Update your password regularly.":[]
+                                },
+                                {
+                                    "id":4,
+                                    "Enable account alerts for any unusual activity.":[]
+                                }
+                            ]
+                        },
+                        {
+                            "id":3,
+                            "Do you have any concerns or questions about specific security practices?":[
+                                {
+                                    "id":1,
+                                    "Yes":[]
+                                },
+                                {
+                                    "id":2,
+                                    "No":[]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
